@@ -1,20 +1,19 @@
 export const Bio = {
-  name: "Rishav Chanda",
+  name: "Niraj Paradva",
   roles: [
     "Full Stack Developer",
-    "Android Developer",
-    "UI/UX Designer",
+    "flutter",
     "Programmer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/rishavchanda",
+    "Aspiring web developer with front-end skills and a growing interest in backend technologies. Passionate aboutbuilding full-stack web applications through hands-on projects while continuously expanding my technical capabilities.",
+  github: "https://github.com/Paradva-Niraj",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  twitter: "https://twitter.com/RishavChanda",
+    "https://drive.google.com/file/d/1PZQ_p7S_4CHlFlB7-YIJGusgLW1wmoik/view?usp=sharing",
+  linkedin: "https://www.linkedin.com/in/niraj-paradva/",
+  twitter: "https://x.com/nicxx_111",
   insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+  peer:"https://peerlist.io/nicxx"
 };
 
 export const skills = [

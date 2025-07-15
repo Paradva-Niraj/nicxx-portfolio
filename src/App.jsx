@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import styled, { ThemeProvider } from 'styled-components'
+import { darkTheme } from "./utils/Themes"
+import Navbar from './components/Navbar'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-        <h1>helllo nicxx</h1>
+      <ThemeProvider theme={darkTheme} >
+        <BrowserRouter>
+          <Navbar />
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   )
 }
