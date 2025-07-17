@@ -110,12 +110,12 @@ const MobileMenu = styled.ul`
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   position: absolute;
-  top: 80px;
+  top: 40px;
   right:3%;
   transition: all 0.6s ease-in-out;
-  transform: ${({ isOpen }) => isOpen ? "translateY(0)" : "translateY(-100%)"};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: ${({ isOpen }) => isOpen ? "translateY(0)" : "translateY(-100%)"};
   opacity: ${({ isOpen }) => isOpen ? "1" : "0"};
   z-index: ${({ isOpen }) => isOpen ? "1000" : "-1000"};
   @media Screen and (min-width:768px){
@@ -145,10 +145,20 @@ const Navbar = () => {
 
         {
           isOpen && <MobileMenu isOpen={isOpen}>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#skills">Skills</NavLink>
-            <NavLink href="#projects">Projects</NavLink>
-            <NavLink href="#education">Education</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#about">About</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#skills">Skills</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#projects">Projects</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#education">Education</NavLink>
+            <GitButton
+              href={Bio.github}
+              target="_blank"
+              style={{
+                background: "#854CE6",
+                color: "#ffffffff",
+              }}
+            >
+              GitHubProfile
+            </GitButton>
           </MobileMenu>
         }
 
