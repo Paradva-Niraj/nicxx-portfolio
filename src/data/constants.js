@@ -1,8 +1,8 @@
 export const Bio = {
   name: "Niraj Paradva",
   roles: [
-    "Full Stack Developer",
-    "flutter",
+    "frontend Developer",
+    "Backend Developer",
     "Programmer",
   ],
   description:
