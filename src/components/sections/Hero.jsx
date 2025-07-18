@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-// import HeroBgAnimation from "../HeroBgAnimation";
+import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import {
@@ -10,7 +10,7 @@ import {
   headContentAnimation,
   headTextAnimation,
 } from "../../utils/motion";
-// import StarCanvas from "../canvas/Stars";
+import StarCanvas from "../canvas/Stars";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -178,12 +178,12 @@ const ResumeButton = styled.a`
 
 const Img = styled.img`
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 120%;
   max-width: 400px;
   max-height: 400px;
   border: 2px solid ${({ theme }) => theme.primary};
-
+  
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
@@ -254,9 +254,14 @@ const Hero = () => {
             </HeroLeftContainer>
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
-                <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
-                </Tilt>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Img src="nicxx.jpg" alt="Niraj Paradva" />
+                </motion.div>
               </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>

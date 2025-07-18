@@ -1,9 +1,11 @@
 export const Bio = {
   name: "Niraj Paradva",
   roles: [
-    "frontend Developer",
+    "Frontend Developer",
     "Backend Developer",
-    "Programmer",
+    "MERN Stack Engineer",
+    "Problem Solver",
+    "Lifelong Learner",
   ],
   description:
     "Aspiring web developer with front-end skills and a growing interest in backend technologies. Passionate aboutbuilding full-stack web applications through hands-on projects while continuously expanding my technical capabilities.",
