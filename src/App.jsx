@@ -10,7 +10,9 @@ import Skills from "./components/sections/Skills"
 import StartCanvas from "./components/canvas/Stars";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
-// import Projects from "./components/sections/Projects";
+import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 
 
 const Body = styled.div`
@@ -51,12 +53,12 @@ function App() {
                 <Skills />
                 {/* <Experience /> */}
               </Wrapper>
-              {/* <Projects /> */}
+              <Projects />
               <Wrapper>
                 <Education />
-                {/* <Contact /> */}
+                <Contact />
               </Wrapper>
-              {/* <Footer /> */}
+              <Footer />
             </div>
           </Body>
         </BrowserRouter>

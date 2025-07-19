@@ -11,6 +11,7 @@ const Container = styled.div`
   justify-contnet: center;
   position: rlative;
   z-index: 1;
+  margin-top:10vh;
   align-items: center;
 `;
 
@@ -67,7 +68,7 @@ const Education = () => {
             <EducationCard key={`education-${index}`} education={education} />
           ))}
         </VerticalTimeline>
-        {/* <EarthCanvas /> */}
+        <EarthCanvas />
       </Wrapper>
     </Container>
   );

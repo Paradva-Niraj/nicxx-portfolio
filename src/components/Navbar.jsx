@@ -138,18 +138,18 @@ const Navbar = () => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink href="/">About</NavLink>
+          <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#Projects">Projects</NavLink>
+          <NavLink href="#Education">Education</NavLink>
         </NavItems>
 
         {
           isOpen && <MobileMenu isOpen={isOpen}>
-            <NavLink onClick={() => setIsOpen(!isOpen)}  href="/">About</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#About">About</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)}  href="#Skills">Skills</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#projects">Projects</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#education">Education</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#Projects">Projects</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#Education">Education</NavLink>
             <GitButton
               href={Bio.github}
               target="_blank"
