@@ -1,5 +1,30 @@
-import React, { useRef } from "react";
-import styled from "styled-components";
+import React, { useRef, useState } from "react";
+import styled, { keyframes } from "styled-components";
+import emailjs from "@emailjs/browser";
+
+const fadeInOut = keyframes`
+  0% { opacity: 0; bottom: 20px; }
+  10% { opacity: 1; bottom: 40px; }
+  90% { opacity: 1; bottom: 40px; }
+  100% { opacity: 0; bottom: 20px; }
+`;
+
+// Toast style
+const Toast = styled.div`
+  position: fixed;
+  top:10%;
+  right:0;
+  height:3%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  background-color: ${({ type }) => (type === "success" ? "#4caf50" : "#f44336")};
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 9999;
+  animation: ${fadeInOut} 3s ease-in-out;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -44,7 +69,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -104,46 +129,107 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
+
   const form = useRef();
-  const handelSubmit = (e) => {
+
+  const [toast, setToast] = useState({ show: false, message: "", type: "" });
+
+  const [formData, setFormData] = useState({
+    from_email: "",
+    from_name: "",
+    subject: "",
+    message: "",
+  });
+
+  const showToast = (message, type = "success") => {
+    setToast({ show: true, message, type });
+    setTimeout(() => {
+      setToast({ show: false, message: "", type: "" });
+    }, 3000);
+  };
+
+  const isValidEmail = (email) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validation
+    const { from_email, from_name, subject, message } = formData;
+    if (!from_email || !from_name || !subject || !message) {
+      // console.log(formData);
+      showToast("Please fill all the fields ❌", "error");
+      return;
+    }
+
+    if (!isValidEmail(from_email)) {
+      showToast("Enter a valid email address ❌", "error");
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_00pykw9",
+        "template_44jybx8",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "JHBsTX9my-p-a7x3T"
       )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
+      .then(() => {
+        showToast("Message sent successfully ✅", "success");
+        form.current.reset();
+        setFormData({ from_email: "", from_name: "", subject: "", message: "" });
+      })
+      .catch((error) => {
+        showToast("Something went wrong ❌","error");
+        // console.error("EmailJS error:", error);
+      });
   };
+
   return (
     <Container id="Education">
       <Wrapper>
         <Title>Contact</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
+        <Desc style={{ marginBottom: "40px" }}>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInput
+            placeholder="Your Email"
+            name="from_email"
+            value={formData.from_email}
+            onChange={handleChange}
+          />
+          <ContactInput
+            placeholder="Your Name"
+            name="from_name"
+            value={formData.from_name}
+            onChange={handleChange}
+          />
+          <ContactInput
+            placeholder="Subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+          />
+          <ContactInputMessage
+            placeholder="Message"
+            name="message"
+            rows={4}
+            value={formData.message}
+            onChange={handleChange}
+          />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
+      {toast.show && <Toast type={toast.type}>{toast.message}</Toast>}
     </Container>
   );
 };
