@@ -8,6 +8,7 @@ const Container = styled.div`
   justify-contnet: center;
   position: rlative;
   z-index: 1;
+  margin-top:10vh;
   align-items: center;
 `;
 

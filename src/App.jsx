@@ -7,7 +7,11 @@ import { BrowserRouter } from 'react-router-dom'
 // sections import
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills"
+import StartCanvas from "./components/canvas/Stars";
 import Experience from "./components/sections/Experience";
+import Education from "./components/sections/Education";
+// import Projects from "./components/sections/Projects";
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -40,11 +44,20 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Body>
-            <Hero />
-            <Wrapper>
-              <Skills />
-              {/* <Experience /> */}
-            </Wrapper>
+             <StartCanvas />
+            <div>
+              <Hero />
+              <Wrapper>
+                <Skills />
+                {/* <Experience /> */}
+              </Wrapper>
+              {/* <Projects /> */}
+              <Wrapper>
+                <Education />
+                {/* <Contact /> */}
+              </Wrapper>
+              {/* <Footer /> */}
+            </div>
           </Body>
         </BrowserRouter>
       </ThemeProvider>
