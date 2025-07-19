@@ -5,9 +5,10 @@ import { Bio } from "../data/constants"
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
 
 const Nav = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  background-color:#0909177e;
   height: 80px;
   display: flex;
+  backdrop-filter: blur(7px);
   align-items: center;
   justify-content: center;
   font-size: 1rem;
@@ -138,7 +139,7 @@ const Navbar = () => {
 
         <NavItems>
           <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
@@ -146,7 +147,7 @@ const Navbar = () => {
         {
           isOpen && <MobileMenu isOpen={isOpen}>
             <NavLink onClick={() => setIsOpen(!isOpen)}  href="#about">About</NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#skills">Skills</NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)}  href="#Skills">Skills</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)}  href="#projects">Projects</NavLink>
             <NavLink onClick={() => setIsOpen(!isOpen)}  href="#education">Education</NavLink>
             <GitButton
@@ -161,7 +162,6 @@ const Navbar = () => {
             </GitButton>
           </MobileMenu>
         }
-
         <ButtonContainer>
           <GitButton href={Bio.github} target="_blank">GitHubProfile</GitButton>
         </ButtonContainer>
