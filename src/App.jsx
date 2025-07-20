@@ -12,7 +12,7 @@ import Education from "./components/sections/Education";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
-
+import { Helmet } from "react-helmet";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -41,11 +41,20 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Niraj Paradva | Full Stack Developer</title>
+        <meta name="description" content="Portfolio of Niraj Paradva. Showcasing full-stack projects, skills, and contact information." />
+        <meta name="keywords" content="React, Portfolio, Full Stack Developer, Niraj Paradva, JavaScript, niraj, paradva, niraj paradva, devloper" />
+        <meta name="author" content="Niraj Paradva" />
+        <meta property="og:title" content="Niraj Paradva Portfolio" />
+        <meta property="og:description" content="Explore my work and contact me for collaboration." />
+        <meta property="og:url" content="https://yourdomain.com" />
+      </Helmet>
       <ThemeProvider theme={darkTheme} >
         <BrowserRouter>
           <Navbar />
           <Body>
-             <StartCanvas />
+            <StartCanvas />
             <div>
               <Hero />
               <Wrapper>

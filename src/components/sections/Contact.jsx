@@ -176,10 +176,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_00pykw9",
-        "template_44jybx8",
+        import.meta.env.VITE_SERVICE_KEY,
+        import.meta.env.VITE_TEMPLETE_KEY,
         form.current,
-        "JHBsTX9my-p-a7x3T"
+        import.meta.env.VITE_PUBLIC_KEY,
       )
       .then(() => {
         showToast("Message sent successfully ✅", "success");
@@ -193,7 +193,7 @@ const Contact = () => {
   };
 
   return (
-    <Container id="Education">
+    <Container id="Hire">
       <Wrapper>
         <Title>Contact</Title>
         <Desc style={{ marginBottom: "40px" }}>
