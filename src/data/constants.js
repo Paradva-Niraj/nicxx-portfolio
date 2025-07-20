@@ -11,7 +11,7 @@ export const Bio = {
     "Aspiring web developer with front-end skills and a growing interest in backend technologies. Passionate aboutbuilding full-stack web applications through hands-on projects while continuously expanding my technical capabilities.",
   github: "https://github.com/Paradva-Niraj",
   resume:
-    "https://drive.google.com/file/d/1PZQ_p7S_4CHlFlB7-YIJGusgLW1wmoik/view?usp=sharing",
+    "https://drive.google.com/file/d/1TF6sAZC0g6VIX2Xl-NGxiGMQos7AJHgK/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/niraj-paradva/",
   twitter: "https://x.com/nicxx_111",
   insta: "https://www.instagram.com/rishav_chanda/",
