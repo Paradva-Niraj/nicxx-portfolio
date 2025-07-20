@@ -360,7 +360,7 @@ export const education = [
     id: 0,
     img: "./msu.png",
     school: "The Maharaja Sayajirao University of Baroda",
-    date: "Aug 2021 - 2026",
+    date: "Aug 2024 - 2026",
     grade: "76% Expected",
     degree: "Master in Computer Application",
     desc: "I am currently pursuing my Master's in Computer Application at The Maharaja Sayajirao University of Baroda.I am actively enhancing my skills in modern web technologies such as React.js, Node.js, Express.js, and MongoDB. I also have hands-on experience with tools like Git, GitHub, Vercel, and deployment platforms such as Render and TinyHost. My focus is on building full-stack applications and continuously learning new frameworks, libraries, and best practices to stay up-to-date in the fast-evolving tech landscape."
@@ -378,7 +378,7 @@ export const education = [
     id: 2,
     img: "./jambe.jpg",
     school: "Jay Ambe School",
-    date: "June 2019 - May 2021",
+    date: "June 2020 - May 2021",
     grade: "78.43%",
     desc: "I completed my class 12 higher Secondary school education  Jay Ambe School, Surat, where I studied Commerce For Good Management And Financial Skills.",
     degree: "XII With Commerce",
