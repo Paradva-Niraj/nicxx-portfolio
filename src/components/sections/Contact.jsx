@@ -29,6 +29,7 @@ const Toast = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  padding-top:3vw;
   justify-contnet: center;
   position: rlative;
   z-index: 1;

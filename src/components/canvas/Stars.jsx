@@ -19,7 +19,7 @@ const Stars = (props) => {
 
   // 🟢 Reduced from 5000 to 1500 points
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(1500), { radius: 1.4 }) // slight increase in radius to space out stars
+    random.inSphere(new Float32Array(1000), { radius: 1.4 }) // slight increase in radius to space out stars
   );
 
   useFrame((state, delta) => {

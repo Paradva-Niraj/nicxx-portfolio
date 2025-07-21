@@ -7,6 +7,7 @@ import EarthCanvas from "../canvas/Earth";
 
 const Container = styled.div`
   display: flex;
+  padding-top:3.5vw;
   flex-direction: column;
   justify-contnet: center;
   position: rlative;
