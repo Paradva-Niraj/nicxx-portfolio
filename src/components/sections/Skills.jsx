@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-contnet: center;
-  position: rlative;
+  position: relative;
   z-index: 1;
   margin-top:10vh;
   align-items: center;
@@ -49,11 +49,13 @@ const Desc = styled.div`
 const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
+  max-width:500px;
   flex-wrap: wrap;
   margin-top: 20px;
   gap: 50px;
   justify-content: center;
-`;
+;`
+
 
 const Skill = styled.div`
   width: 100%;
@@ -62,10 +64,10 @@ const Skill = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.125);
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
-  padding: 18px 36px;
+  padding: 18px 40px;
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 10px 36px; 
   }
 
   @media (max-width: 500px) {

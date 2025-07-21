@@ -32,11 +32,11 @@ export const skills = [
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
-      {
-        name: "Next Js",
-        image:
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
-      },
+      // {
+      //   name: "Next Js",
+      //   image:
+      //     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+      // },
 
       {
         name: "HTML",
@@ -98,20 +98,10 @@ export const skills = [
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFFyY16N5NRhzoG24RqB7x8Ok2t8Bdgs-tuMsOBXS2Q&s",
       },
       {
-        name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      },
+        name: "FastAPI",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+      }
 
-      {
-        name: "MongoDB",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      },
     ],
   },
   {
@@ -140,6 +130,11 @@ export const skills = [
       {
         name: "TinyHost",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJwVf2N2wd7pCmhuU94B0A4-YeSXpnIr7OMw8-PSuVlNef8rpo8gE1lLRkTDbVnCqq-c&usqp=CAU",
+      },
+      {
+        name: "Netlify",
+        image:
+          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
       },
     ]
   },
@@ -221,11 +216,7 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
-      {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      },
+
       {
         name: "VS Code",
         image:
@@ -248,6 +239,32 @@ export const skills = [
       },
     ],
   },
+  {
+    title: "Database",
+    skills: [
+      {
+        name: "MySQL",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        name: "MongoDB",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        name: "Firebase",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+      },
+      {
+        name: "SQLite",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+      },
+      {
+        name: "Oracle",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+      }
+    ]
+  }
+
 ];
 
 export const experiences = [
@@ -416,7 +433,7 @@ export const projects = [
       "An image enhancement tool that lets users upload photos and apply filters, denoise, or upscale resolution using client‑side TensorFlow.js models. Includes drag‑and‑drop interface and preview slider.",
     image:
       "https://raw.githubusercontent.com/Paradva-Niraj/image-enhancer/refs/heads/main/LiveDemo/Macbook-Air-image-enhancer-khaki.vercel.app.png",
-    tags: ["JavaScript", "HTML5 Canvas", "CSS", "React js","API","Imhance API"],
+    tags: ["JavaScript", "HTML5 Canvas", "CSS", "React js", "API", "Imhance API"],
     category: "AI",
     github: "https://github.com/Paradva-Niraj/image-enhancer",
     webapp: "https://image-enhancer-paradva.netlify.app",
@@ -442,7 +459,7 @@ export const projects = [
       "A full‑stack assignment management system for educators to create assignments, collect student submissions. Built with python as backend and front in tkinter; includes authentication, file uploads",
     image:
       "https://raw.githubusercontent.com/Paradva-Niraj/assigment-management-system/refs/heads/main/frontend/icon.ico",
-    tags: ["Python","TKinter"],
+    tags: ["Python", "TKinter"],
     category: "desktop app",
     github: "https://github.com/Paradva-Niraj/assigment-management-system",
     webapp: "https://ams-paradva.netlify.app",
@@ -455,7 +472,7 @@ export const projects = [
       "A CSS/UI component library built as the frontend for the Sundown design system. Provides reusable React components (buttons, cards, modals) and a live playground for testing themes and layouts.",
     image:
       "https://raw.githubusercontent.com/Paradva-Niraj/sundown-frontend/refs/heads/main/demo/ec22b66d-cd95-4124-8b65-93e1d87e57d4.png",
-    tags: ["Java Script", "HTML", "CSS","Locomotive Lib","Smoth Scroll"],
+    tags: ["Java Script", "HTML", "CSS", "Locomotive Lib", "Smoth Scroll"],
     category: "front end",
     github: "https://github.com/Paradva-Niraj/sundown-frontend",
     webapp: "https://sundown-frontend.netlify.app",
@@ -507,7 +524,7 @@ export const projects = [
       "A frontend‑only tool for crafting and testing AI prompts. Built in React with a form UI, it helps users quickly iterate on prompt templates before sending them to an LLM API.",
     image:
       "https://raw.githubusercontent.com/Paradva-Niraj/PromptGenerator/refs/heads/main/preview/p1.png",
-    tags: ["React", "JavaScript", "HTML", "CSS", "Socket", "Python","AI"],
+    tags: ["React", "JavaScript", "HTML", "CSS", "Socket", "Python", "AI"],
     category: "AI",
     github: "https://github.com/Paradva-Niraj/PromptGenerator",
     webapp: "https://prompt-generator-paradva.netlify.app",
@@ -559,7 +576,7 @@ export const projects = [
       "A complete book management system built with HTML,CSS,PHP on the frontend authentication with cookies and MySQL as the database. Allows librarians to add, update, and remove books, and patrons to search and reserve copies.",
     image:
       "https://private-user-images.githubusercontent.com/182334902/399085824-82200ffe-429f-4714-8efc-7e7958482715.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI5OTk2NjAsIm5iZiI6MTc1Mjk5OTM2MCwicGF0aCI6Ii8xODIzMzQ5MDIvMzk5MDg1ODI0LTgyMjAwZmZlLTQyOWYtNDcxNC04ZWZjLTdlNzk1ODQ4MjcxNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMFQwODE2MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YzRlYzliYmJlODBiYTNkYTUyNGVmZGI4ZDA2MWUxNjlkZjM2MjI1OGZlZWI2NmRlNjQ3OTNkOWIzYzgyOWM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.P_XecwEr1oLO_QfMHqK1d6Y5ecNiEtGTDQAayMK1VRw",
-    tags: ["HTML","CSS","JS","PHP"],
+    tags: ["HTML", "CSS", "JS", "PHP"],
     category: "web app",
     github: "https://github.com/Paradva-Niraj/library-book-management",
     webapp: "https://library-management-paradva.firebaseapp.com",

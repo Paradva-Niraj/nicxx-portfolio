@@ -4,17 +4,22 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import styled from "styled-components";
 
+// 🟢 STYLES
 const StyledCanvasWrapper = styled.div`
   width: 100%;
   height: auto;
   position: absolute;
   inset: 0;
+  pointer-events: none; // prevent canvas from blocking UI interactions
 `;
 
+// 🟢 STARS COMPONENT
 const Stars = (props) => {
   const ref = useRef();
+
+  // 🟢 Reduced from 5000 to 1500 points
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(1500), { radius: 1.4 }) // slight increase in radius to space out stars
   );
 
   useFrame((state, delta) => {
@@ -27,9 +32,9 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#f272c8"
-          size={0.002}
-          sizeAttenuation={true}
+          color="#ffffff"
+          size={0.004} // slightly larger but fewer points
+          sizeAttenuation
           depthWrite={false}
         />
       </Points>
@@ -37,10 +42,11 @@ const Stars = (props) => {
   );
 };
 
+// 🟢 CANVAS WRAPPER
 const StyledStarsCanvas = () => {
   return (
     <StyledCanvasWrapper>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 1] }} gl={{ antialias: true }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
