@@ -2,7 +2,7 @@
 
 Welcome to the official portfolio of **Niraj Paradva**, a passionate and versatile **Full Stack Developer** specializing in modern web technologies and end-to-end project development.
 
-🌐 **Live Portfolio:** [nicxx-portfolio.vercel.app/](https://nicxx-portfolio.vercel.app/)
+🌐 **Live Portfolio:** [nicxx-portfolio.vercel.app/](https://niraj-paradva.vercel.app/)
 
 ---
 
