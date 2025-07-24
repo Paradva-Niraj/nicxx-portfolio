@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: nicxx-portfolio.vercel.app/sitemap.xml
